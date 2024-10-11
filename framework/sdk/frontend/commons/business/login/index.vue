@@ -125,7 +125,7 @@ onMounted(() => {
             class="login-form"
           >
             <div class="login-logo">
-              <img src="../../assets/CloudExplorer-Lite-01.svg" alt="" />
+              <img src="../../assets/MacroSan.svg" alt="" />
             </div>
             <div class="login-welcome">{{ $t("commons.login.welcome") }}</div>
             <div class="login-form-item-container">
@@ -191,8 +191,9 @@ onMounted(() => {
 
   .login-form {
     margin-top: 116px;
-    width: 440px;
-    margin-left: 80px;
+    //width: 440px;
+    margin-left: 70px;
+    margin-right: 60px;
   }
 
   .login-logo {
@@ -224,8 +225,10 @@ onMounted(() => {
 
   .login-form-item-container {
     margin-top: 24px;
+    margin-left: 50px;
     .login-form-input {
       height: 40px;
+      width: 83%;
     }
     & :deep(.el-input__inner) {
       font-size: 16px;
@@ -238,8 +241,9 @@ onMounted(() => {
 
   .login-btn {
     margin-top: 48px;
+    margin-left: 50px;
     .submit {
-      width: 100%;
+      width: 83%;
       height: 40px;
       span {
         font-size: 16px;

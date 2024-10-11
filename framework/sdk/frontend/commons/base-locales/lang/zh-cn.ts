@@ -158,7 +158,7 @@ const message = {
       please_input_username: "请输入用户名",
       please_input_password: "请输入密码",
       title: "CloudExplorer 云服务平台",
-      welcome: "欢迎使用 CloudExplorer 云管理平台",
+      welcome: "欢迎使用 MCloud 多云管理平台",
       expires: "认证信息已过期，请重新登录",
     },
     charge_type: {

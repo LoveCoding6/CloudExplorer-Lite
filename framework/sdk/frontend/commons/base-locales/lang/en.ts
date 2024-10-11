@@ -157,7 +157,7 @@ const message = {
       please_input_username: "Please Input Username",
       please_input_password: "Please Input Password",
       title: "CloudExplorer Cloud Service Platform",
-      welcome: "Welcome to CloudExplorer Cloud Management Platform",
+      welcome: "Welcome to MCloud Multi Management Platform",
       expires: "The Authentication Information Has Expired, Please Login Again",
     },
     charge_type: {
