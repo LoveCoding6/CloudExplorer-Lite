@@ -116,13 +116,18 @@ onMounted(() => {
   <div class="login-background">
     <div class="login-container">
       <el-row type="flex" v-loading="loading">
-        <el-col :span="12">
+        <el-col :span="14">
+          <div class="login-image">
+<!--            <span class="font-logo">MacroSAN</span>-->
+          </div>
+        </el-col>
+        <el-col :span="10">
           <el-form
-            :model="form"
-            :rules="rules"
-            ref="formRef"
-            size="default"
-            class="login-form"
+              :model="form"
+              :rules="rules"
+              ref="formRef"
+              size="default"
+              class="login-form"
           >
             <div class="login-logo">
               <img src="../../assets/MacroSan.svg" alt="" />
@@ -131,30 +136,30 @@ onMounted(() => {
             <div class="login-form-item-container">
               <el-form-item prop="username" style="margin-bottom: 28px">
                 <el-input
-                  v-model.trim="form.username"
-                  :placeholder="$t('commons.login.username')"
-                  autofocus
-                  class="login-form-input"
+                    v-model.trim="form.username"
+                    :placeholder="$t('commons.login.username')"
+                    autofocus
+                    class="login-form-input"
                 />
               </el-form-item>
               <el-form-item prop="password">
                 <el-input
-                  v-model.trim="form.password"
-                  :placeholder="$t('commons.login.password')"
-                  show-password
-                  maxlength="30"
-                  show-word-limit
-                  autocomplete="new-password"
-                  class="login-form-input"
+                    v-model.trim="form.password"
+                    :placeholder="$t('commons.login.password')"
+                    show-password
+                    maxlength="30"
+                    show-word-limit
+                    autocomplete="new-password"
+                    class="login-form-input"
                 />
               </el-form-item>
             </div>
             <div class="login-btn">
               <el-button
-                type="primary"
-                class="submit"
-                @click="submitForm(formRef)"
-                size="default"
+                  type="primary"
+                  class="submit"
+                  @click="submitForm(formRef)"
+                  size="default"
               >
                 <span>{{ $t("commons.btn.login") }}</span>
               </el-button>
@@ -162,10 +167,8 @@ onMounted(() => {
             <div class="login-hint" v-html="loginHint"></div>
           </el-form>
         </el-col>
-        <el-col :span="12">
-          <div class="login-image"></div>
-        </el-col>
       </el-row>
+      <div class="copyright">版权所有 © 2024 杭州宏杉科技股份有限公司。保留所有权利。</div>
     </div>
   </div>
 </template>
@@ -188,6 +191,8 @@ onMounted(() => {
   width: 1200px;
   height: 520px;
   background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   .login-form {
     margin-top: 116px;
@@ -259,10 +264,23 @@ onMounted(() => {
   }
 
   .login-image {
-    background: url(@commons/assets/login-desc.jpg) no-repeat;
-    background-size: cover;
+    background: url(@commons/assets/cloud.webp) no-repeat;
+    background-size: 100% 100%;
     width: 100%;
     height: 520px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .font-logo {
+    font-size: 50px;
+    color: white;
+  }
+  .copyright {
+    color: #6c6c6c;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>

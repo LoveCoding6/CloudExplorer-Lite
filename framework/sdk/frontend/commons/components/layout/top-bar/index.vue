@@ -9,6 +9,7 @@ import SourceChangeDialog from "@commons/business/person-setting/SourceChangeDia
 import RoleTag from "@commons/business/person-setting/RoleTag.vue";
 import ModuleDownMenu from "@commons/business/module-down-menu/index.vue";
 import CeMainLogo from "@commons/assets/CloudExplorer-Lite-02.svg";
+import MacroSanLogo from "@commons/assets/MacroSan-white.svg";
 import { ref } from "vue";
 
 const userStore = useUserStore();
@@ -32,7 +33,7 @@ function roleSelectVisibleChange(visible: boolean) {
 
 <template>
   <div class="top-nav">
-    <el-image :src="CeMainLogo" fit="contain" style="width: 145px" />
+    <el-image :src="MacroSanLogo" fit="contain" style="width: 145px;"/>
     <el-divider direction="vertical" class="header-divider" />
     <div
       class="service_catalog"
